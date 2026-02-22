@@ -46,7 +46,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/demo_py:v1.2 .
+          docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/demo_py:v1.3 .
       - name: Push Docker Image
         run: |
-          docker push ${{ secrets.ACR_LOGIN_SERVER }}/demo_py:v1.2
+          docker push ${{ secrets.ACR_LOGIN_SERVER }}/demo_py:v1.3
